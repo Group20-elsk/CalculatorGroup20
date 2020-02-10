@@ -22,6 +22,13 @@ namespace CalculatorGroup20
         }
 
         [Test]
+        public void TestAddMethod4and4_Returns8()
+        {
+            //ACT og ASSERT
+            Assert.That(_calculator.Add(4, 4), Is.EqualTo(8));
+        }
+
+        [Test]
         public void TestAddMethodMinusOne()
         {
             Assert.That(_calculator.Add(4, -1), Is.EqualTo(3));
